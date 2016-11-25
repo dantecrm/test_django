@@ -1,0 +1,1 @@
+<testsuite errors="0" failures="0" name="Django Project Tests" skips="0" tests="2" time="0.003"><testcase classname="accounting.tests.TestAccountTransaction" name="test_transaction_succed" time="0.001123" /><testcase classname="accounting.tests.TestAccountTransaction" name="test_transaction_whith_enough_money_fails" time="0.000820" /></testsuite>

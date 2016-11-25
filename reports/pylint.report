@@ -1,0 +1,136 @@
+************* Module accounting.views
+accounting/views.py:1: [W0611(unused-import), ] Unused render imported from django.shortcuts
+************* Module accounting.tests
+accounting/tests.py:17: [C0326(bad-whitespace), ] Exactly one space required after comma
+            amount=0,  currency=self.account1.currency)
+                    ^
+accounting/tests.py:22: [W1505(deprecated-method), TestAccountTransaction.test_transaction_succed] Using deprecated method assertEquals()
+accounting/tests.py:23: [W1505(deprecated-method), TestAccountTransaction.test_transaction_succed] Using deprecated method assertEquals()
+************* Module accounting.admin
+accounting/admin.py:1: [W0611(unused-import), ] Unused admin imported from django.contrib
+
+
+Report
+======
+62 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |10     |10         |=          |20.00       |30.00    |
++---------+-------+-----------+-----------+------------+---------+
+|class    |9      |9          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |6      |6          |=          |50.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    accounting 
+      \-models (accounting.tests)
+    django 
+      \-apps (accounting.apps)
+      \-conf (accounting.migrations.0001_initial,accounting.migrations.0002_auto_20161125_1107)
+      \-contrib 
+      | \-admin (accounting.admin)
+      | \-auth 
+      |   \-models (accounting.models)
+      \-db 
+      | \-migrations (accounting.migrations.0001_initial,accounting.migrations.0003_auto_20161125_1113,accounting.migrations.0002_auto_20161125_1107)
+      | \-models (accounting.migrations.0001_initial,accounting.migrations.0003_auto_20161125_1113,accounting.migrations.0002_auto_20161125_1107,accounting.models)
+      |   \-deletion (accounting.migrations.0001_initial,accounting.migrations.0002_auto_20161125_1107)
+      \-shortcuts (accounting.views)
+      \-test (accounting.tests)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |133    |70.74 |133      |=          |
++----------+-------+------+---------+-----------+
+|docstring |4      |2.13  |4        |=          |
++----------+-------+------+---------+-----------+
+|comment   |11     |5.85  |11       |=          |
++----------+-------+------+---------+-----------+
+|empty     |40     |21.28 |40       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |1      |1        |=          |
++-----------+-------+---------+-----------+
+|refactor   |0      |0        |=          |
++-----------+-------+---------+-----------+
+|warning    |4      |4        |=          |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++-----------------+------+--------+---------+-----------+
+|module           |error |warning |refactor |convention |
++=================+======+========+=========+===========+
+|accounting.tests |0.00  |50.00   |0.00     |100.00     |
++-----------------+------+--------+---------+-----------+
+|accounting.views |0.00  |25.00   |0.00     |0.00       |
++-----------------+------+--------+---------+-----------+
+|accounting.admin |0.00  |25.00   |0.00     |0.00       |
++-----------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------+------------+
+|message id        |occurrences |
++==================+============+
+|unused-import     |2           |
++------------------+------------+
+|deprecated-method |2           |
++------------------+------------+
+|bad-whitespace    |1           |
++------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 9.19/10 (previous run: 9.19/10, +0.00)
+
